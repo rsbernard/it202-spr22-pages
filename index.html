@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>replit</title>
+
+  </head>
+  <body>
+    <h1>IT202 - Spring 2022 - Pages</h1>
+
+    <div id="pageLinks"></div>
+
+
+    <script>
+      let assignments = [
+        "googleMapsAndStaticData.html",
+        "googleMapsAndLiveData.html"
+      ]
+
+      let linksDiv = document.querySelector("#pageLinks");
+
+      assignments.forEach ( (item) => {
+        let a = document.createElement("a");
+        a.href=item;
+        a.innerText = item;
+        
+        linksDiv.append(a);
+        linksDiv.append(document.createElement("hr"));
+
+      });
+
+
+    </script>
+  </body>
+</html>
